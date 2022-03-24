@@ -23,6 +23,8 @@ namespace KnowledgeBaseEditor
         public MainWindow()
         {
             InitializeComponent();
+            lbl.FontSize = 25;
+            lbl.FontFamily = new System.Windows.Media.FontFamily("Times New Roman");
         }
     }
 }
