@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KnowledgeBaseEditor"
         mc:Ignorable="d"
-        Title="Редактор базы знаний" FontFamily="Times New Roman" Height="500" Width="900">
+        
+        Title="Редактор базы знаний" FontFamily="Times New Roman" Height="480" Width="760">
+   
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -18,8 +21,18 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label Name="lbl" Grid.Column="1">Интеллектуальная система классификации автомобилей</Label>
-
+        <Label Grid.Column="1" FontSize = "25"  FontFamily= "Times New Roman">Интеллектуальная система классификации автомобилей</Label>
+        
+        <Label Grid.Row="1" Margin="0,32,0,0" FontSize = "20"  FontFamily= "Times New Roman" Content="Данная система представляет пользователям следующий функционал:&#xD;&#xA;&#xD;&#xA;1. Классификатор автомобилей. Система классифицирует автомобиль &#xD;&#xA;по введеденным значениям признаков.&#xD;&#xA;&#xD;&#xA;2. Редактор базы знаний. Система позволяет вносить изменения в базу&#xD;&#xA;знаний." Grid.Column="1"/>
+        
+        <StackPanel Grid.Row="2" Margin="26,74,365,53" Grid.Column="1">
+            <Button Height="75" Width="227" Content="Классификатор автомобилей" Background="#FF3F558C" BorderBrush="Black" FontSize="16" FontWeight="Bold"/>
+        </StackPanel>
+       
+        <StackPanel Grid.Row="2" Margin="365,74,26,53" Grid.Column="1">
+            <Button Height="75" Width="227" Content="Редактор базы знаний" Background="#FF3F558C" FontSize="16" FontWeight="Bold" FontStyle="Normal"/>
+        </StackPanel>
+        
     </Grid>
 </Window>
     
